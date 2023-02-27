@@ -1,0 +1,75 @@
+// interface IEvent {
+//     id: number | string,
+//     name: string,
+//     picture: string,
+//     businessName: string,
+//     category: string,
+//     workingHours: string,
+//     description: string,
+// }
+
+// const LocalEvents: IEvent = [
+//     {
+//         id: 1,
+//         name: "Caffee 1",
+//         businessName: "Cafee 1"
+//         picture: "https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+//         category: "caffee",
+//         workingHours: "10:00 - 18:00",
+//         address: "Alexanderstraße 129",
+//         distance: 500,
+//         isFavourite: false,
+//     },
+//     {
+//         id: 2,
+//         name: "Restaurant 2",
+//         picture: "https://images.unsplash.com/photo-1611915365928-565c527a0590?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+//         category:"restaurant",
+//         workingHours: "12:00 - 18:00",
+//         address: "Alexanderstraße 129",
+//         distance: 500,
+//         isFavourite: false,
+//     },
+//     {
+//         id: 3,
+//         name: "Restaurant 3",
+//         picture: "https://images.unsplash.com/photo-1611915365928-565c527a0590?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+//         category: "restaurant",
+//         workingHours: "13:00 - 18:00",
+//         address: "Alexanderstraße 12",
+//         distance: 400,
+//         isFavourite: true,
+//     },
+//     {
+//         id: 4,
+//         name: "Restaurant 4",
+//         picture: "https://images.unsplash.com/photo-1611915365928-565c527a0590?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+//         category: "restaurant",
+//         workingHours: "10:00 - 14:00",
+//         address: "Alexanderstraße 1",
+//         distance: 760,
+//         isFavourite: false,
+//     },
+//     {
+//         id: 5,
+//         name: "Beauty salon 1",
+//         picture: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
+//         category: "beauty salon",
+//         workingHours: "11:00 - 15:00",
+//         address: "Alexanderstraße 1",
+//         distance: 350,
+//         isFavourite: true,
+//     },
+//     {
+//         id: 6,
+//         name: "Shop 1",
+//         picture: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+//         category: "shop",
+//         workingHours: "11:00 - 15:00",
+//         address: "Alexanderstraße 11",
+//         distance: 350,
+//         isFavourite: true,
+//     },
+// ]
+
+// export default LocalEvents;

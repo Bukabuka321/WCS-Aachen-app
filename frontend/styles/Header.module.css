@@ -1,0 +1,148 @@
+/* HEADER STYLES START */
+
+.header,
+.header_nav {
+  width: 100%;
+  background-color: rgba(32, 32, 32, 1);
+}
+
+.header_nav,
+.header_list,
+.list_item,
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.logo_header {
+  margin: 0.8rem 0.3rem 0.8rem 1.5rem;
+}
+
+.item_header {
+  align-items: center;
+  list-style: none;
+  margin: 0.8rem 3.5rem 0.8rem 3.5rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  display: none;
+}
+
+.link_header {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+.link_header:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+.link_header::after {
+  left: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #FAC520;
+  transition: width .2s;
+  }
+
+.download {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.download_button {
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  background-color: rgba(250, 197, 32, 1);
+  border-radius: 90px;
+}
+
+.link_download {
+  color: black;
+  text-decoration: none;
+}
+@media screen and (min-width: 1024px) {
+  .header,
+.header_nav {
+  width: 100%;
+  background-color: rgba(32, 32, 32, 1);
+}
+
+.header_nav,
+.header_list,
+.list_item,
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+.header {
+  justify-content: space-between;
+}
+
+.logo_header {
+  margin: 0.8rem 0.3rem 0.8rem 1.5rem;
+}
+
+.item_header {
+  align-items: center;
+  list-style: none;
+  margin: 0.8rem 3.5rem 0.8rem 3.5rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  display: inline-flex;
+}
+
+.link_header {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+.link_header:hover::after {
+width: 100%;
+transition: width .3s;
+}
+.link_header::after {
+  left: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #FAC520;
+  transition: width .2s;
+  }
+
+.download {
+  margin-right: 2rem;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.3rem;
+  
+}
+
+.download_button {
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  background-color: rgba(250, 197, 32, 1);
+  border-radius: 90px;
+}
+
+.link_download {
+  color: black;
+  text-decoration: none;
+}
+}
+/* HEADER STYLES END */

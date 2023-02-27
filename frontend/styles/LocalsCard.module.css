@@ -1,0 +1,452 @@
+.cardContainer {
+    box-sizing: border-box;
+    background-color: #404040;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 14px;
+    gap: 15px;
+    width: 100%;
+    height: 170px;
+    padding: 15px;
+    min-width: fit-content;
+    font-family: Helvetica, sans-serif;
+}
+
+.pictureBox {
+    display: none;
+}
+
+.pictureBox>img {
+    object-fit: cover;
+    /* object-fit: contain;
+    background-color: #5D5D5D; */
+}
+
+.companyPicture {
+    display: none;
+}
+
+.nameAndPictureMobile {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 95%;
+    gap: 15px;
+}
+
+.pictureBoxMobile {
+    display: flex;
+    border-radius: 9px;
+    height: 55px;
+    width: 55px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.companyName {
+    display: none;
+    font-weight: 500;
+}
+
+.info>a:hover {
+    color: rgba(250, 197, 32, 1);
+}
+
+.companyNameMobile {
+    display: flex;
+}
+
+.categoryAndWorkingHours {
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+}
+
+.openingHours {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 5px;
+}
+
+.addressLine {
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    padding-bottom: 18px;
+}
+
+.line {
+    color: rgba(93, 93, 93, 1);
+    width: 242.54px;
+    height: 0px;
+    left: 226.21px;
+    top: 78px;
+    border: 1px solid #5D5D5D;
+    border-radius: 90px;
+}
+
+.isFavouriteBtn {
+    width: 130px;
+    height: 40px;
+    color: black;
+    background-color: #FAC520;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.isNotFavouriteBtn {
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: #353535;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+
+.moreInfoBtn {
+    cursor: pointer;
+    width: 19px;
+    height: 14px;
+    background-image: radial-gradient(circle, white 1.5px, transparent 2.0px);
+    background-size: 6px 16px;
+    border-radius: 0.2em;
+    margin-left: 14px;
+}
+
+
+@media screen and (min-width: 600px) {
+    .cardContainer {
+        box-sizing: border-box;
+        background-color: #404040;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 14px;
+        gap: 15px;
+        width: 100%;
+        height: 150px;
+        padding: 15px;
+        max-width: 50rem;
+    }
+
+    .pictureBox {
+        display: flex;
+        width: 200px;
+        height: 100%;
+    }
+
+    .companyPicture {
+        display: flex;
+        border-radius: 15px;
+        top: 15px;
+        left: 15px;
+        order: 0;
+        flex-grow: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nameAndPictureMobile {
+        display: none;
+    }
+
+    .infoBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .pictureBoxMobile {
+        display: none;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info>a:hover {
+        color: rgba(250, 197, 32, 1);
+    }
+
+    .buttonBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .companyName {
+        display: flex;
+        font-style: normal;
+        align-self: flex-start;
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .companyNameMobile {
+        display: none;
+    }
+
+    .categoryAndWorkingHours {
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+        padding-bottom: 0;
+    }
+
+    .addressLine {
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
+
+    .line {
+        color: rgba(93, 93, 93, 1);
+        width: 242.54px;
+        height: 0px;
+        left: 226.21px;
+        top: 78px;
+
+        border: 1px solid #5D5D5D;
+        border-radius: 90px;
+    }
+
+    .isFavouriteBtn {
+        width: 120px;
+        height: 40px;
+        color: black;
+        background-color: #FAC520;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .isNotFavouriteBtn {
+        width: 120px;
+        height: 40px;
+        color: white;
+        background-color: #353535;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+
+    .moreInfoBtn {
+        cursor: pointer;
+        width: 19px;
+        height: 14px;
+        background-image: radial-gradient(circle, white 1.5px, transparent 2.0px);
+        background-size: 6px 16px;
+        border-radius: 0.2em;
+        margin-left: 14px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .cardContainer {
+        box-sizing: border-box;
+        background-color: #404040;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 14px;
+        gap: 15px;
+        width: 100%;
+        height: 150px;
+        padding: 15px;
+        max-width: 56rem;
+    }
+
+    .pictureBox {
+        display: flex;
+        width: 250px;
+    }
+
+    .companyPicture {
+        display: flex;
+        border-radius: 15px;
+        top: 15px;
+        left: 15px;
+        order: 0;
+        flex-grow: 0;
+        width: 100%;
+    }
+
+    .nameAndPictureMobile {
+        display: none;
+    }
+
+    .infoBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .pictureBoxMobile {
+        display: none;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttonBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .companyName {
+        display: flex;
+        font-style: normal;
+        align-self: flex-start;
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+
+    .companyNameMobile {
+        display: none;
+    }
+
+    .categoryAndWorkingHours {
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+        padding-bottom: 0;
+    }
+
+    .addressLine {
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
+
+    .line {
+        color: rgba(93, 93, 93, 1);
+        width: 242.54px;
+        height: 0px;
+        left: 226.21px;
+        top: 78px;
+
+        border: 1px solid #5D5D5D;
+        border-radius: 90px;
+    }
+
+    .isFavouriteBtn {
+        width: 160px;
+        height: 40px;
+        color: black;
+        background-color: #FAC520;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .isNotFavouriteBtn {
+        width: 160px;
+        height: 40px;
+        color: white;
+        background-color: #353535;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+
+    .moreInfoBtn {
+        cursor: pointer;
+        width: 19px;
+        height: 14px;
+        background-image: radial-gradient(circle, white 1.5px, transparent 2.0px);
+        background-size: 6px 16px;
+        border-radius: 0.2em;
+        margin-left: 14px;
+    }
+}

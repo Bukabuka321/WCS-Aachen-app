@@ -1,0 +1,218 @@
+.mainPage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 5%;
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+.publisherName {
+  color: #e0e0e0;
+  margin: 2% 0 2% 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.8px;
+}
+.Container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  height: 100%;
+  margin: auto;
+  max-width: 1000px;
+}
+.newsPreview {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #404040;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.newsPreviewSlide {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 406px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgPrew {
+  grid-column: 1;
+  grid-row: 1;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.publisherPrew {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: flex-start;
+  justify-self: last baseline;
+  color: #e0e0e0;
+  background-color: rgba(64, 64, 64, 0.75);
+  margin: 10px;
+  padding: 5px;
+  text-align: right;
+  border-radius: 90px;
+  letter-spacing: 0.2px;
+}
+
+.titlePrew {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: flex-end;
+  color: #e0e0e0;
+  background-color: rgba(64, 64, 64, 0.75);
+  padding: 15px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+
+.weatherCard {
+  grid-area: 1 / 2 / 2 / 3;
+  display: block;
+  max-height: 406px;
+  min-width: 147px;
+  background-color: #404040;
+  border-radius: 1rem;
+  padding: 2%;
+  object-fit: scale-down;
+}
+
+.todayDate {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  margin: 0 2% 0 2%;
+  padding: 0 5% 0 5%;
+}
+.cityName,
+.mainData h1 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-left: 2%;
+  align-self: end;
+  padding: 0 2% 0 5%;
+}
+.imgContainer {
+  position: unset !important;
+  height: 100%;
+  width: 100%;
+}
+
+.mainData {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.mainData h2 {
+  font-size: 1rem;
+  font-weight: lighter;
+  align-self: start;
+  padding: 5% 0 0 5%;
+}
+
+div.mainData :first-child {
+  grid-area: 1 / 1 / 3 / 2;
+  width: 99%;
+  height: 100%;
+  align-self: center;
+}
+
+.listData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 280px;
+  grid-row-gap: 10%;
+  font-size: 0.8rem;
+  min-height: 100px;
+  margin: auto;
+  margin-top: 0;
+}
+div.listData * {
+  margin: auto;
+  padding: auto;
+}
+.feedList {
+  grid-area: 2 / 1 / 3 / 3;
+  display: flex;
+  flex-wrap: nowrap;
+  color: #e0e0e0;
+  justify-content: space-around;
+  width: 99%;
+  align-items: center;
+  height: fit-content;
+}
+
+.newsList {
+  grid-area: 3 / 1 / 4 / 3;
+  width: 99%;
+}
+
+.publisher {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  height: 46px;
+  width: auto;
+  margin: 2% 2% 0 2%;
+  color: #e0e0e0;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+.publisher *p {
+  height: 50%;
+  padding: 2%;
+}
+div.publisher :last-child {
+  font-size: 0.8rem;
+  margin-top: 1%;
+}
+.publisherLogo {
+  border-radius: 100%;
+}
+
+div.nachrichtenShort:last-child {
+  font-size: 0.7rem;
+}
+.newsByPablisher {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  background-color: #404040;
+  color: #e0e0e0;
+  border-radius: 14px;
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    margin: auto;
+  }
+  .newsPreview {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .feedList {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .newsList {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}

@@ -1,0 +1,162 @@
+/* FOOTER STYLES START */
+.footer {
+    width: 100%;
+    background-color: rgba(32, 32, 32, 1);
+    top: 100vh;
+    position: sticky;
+    padding: 2rem;
+  }
+  
+  .link_footer,
+  .links h2,
+  .rights_info h3,
+  .rights_info p {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .link_footer {
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+  
+  .rights_info h3 {
+    font-size: 1.5em;
+  }
+  
+  .links h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+  
+  .item_footer {
+    list-style: none;
+    margin: 0.2rem 0;
+    font-size: 1.4em;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    justify-content: space-between;
+   
+  }
+  
+  .app {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  
+  .app,
+  .about,
+  .rights {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .rights_info h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .rights_info p {
+    font-weight: 300;
+    font-size: 0.5em;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer {
+      width: 100%;
+      background-color: rgba(32, 32, 32, 1);
+      top: 100vh;
+      position: sticky;
+      padding: 0rem;
+    }
+    
+    .link_footer,
+    .links h2,
+    .rights_info h3,
+    .rights_info p {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .link_footer {
+      font-size: 0.7em;
+      font-weight: 400;
+    }
+    
+    .rights_info h3 {
+      font-size: 0.9em;
+    }
+    
+    .links h2 {
+      font-size: 1.3em;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    
+    .item_footer {
+      list-style: none;
+      margin: 0.2rem 0;
+    font-size: 1.2em;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    
+    .links {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0 0;
+      justify-content: flex-end;
+    }
+    
+    .app {
+      margin-left: 0 !important;
+      width: auto;
+    }
+    
+    .app,
+    .about,
+    .rights {
+      display: flex;
+      flex-direction: column;
+      margin: 3.5rem 5rem;
+    }
+    
+    .copyrights {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 2rem;
+    }
+    
+    .rights_info h3 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .rights_info p {
+      font-weight: 300;
+      font-size: 0.5em;
+    }
+  }
+  
+  /* FOOTER STYLES END */
